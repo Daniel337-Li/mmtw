@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>按摩店官网</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- 导航栏 -->
+  <header class="bg-green-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">按摩养生馆</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-yellow-300">首页</a>
+        <a href="#services" class="hover:text-yellow-300">服务项目</a>
+        <a href="#about" class="hover:text-yellow-300">关于我们</a>
+        <a href="#contact" class="hover:text-yellow-300">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 横幅部分 -->
+  <section id="home" class="bg-cover bg-center h-[80vh]" style="background-image: url('https://source.unsplash.com/1600x900/?spa,massage');">
+    <div class="h-full w-full bg-black bg-opacity-40 flex items-center justify-center">
+      <div class="text-center text-white space-y-4">
+        <h2 class="text-4xl font-bold">欢迎来到我们的按摩馆</h2>
+        <p class="text-lg"></p>
+        <a href="#contact" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">立即预约</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 服务介绍 -->
+  <section id="services" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-3xl font-semibold text-center mb-10">服务项目</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/400x250/?massage,spa" alt="服务1" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-bold mb-2">全身按摩</h4>
+          <p></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/400x250/?foot,massage" alt="服务2" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-bold mb-2">足部按摩</h4>
+          <p></p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://source.unsplash.com/400x250/?hotstone,massage" alt="服务3" class="rounded-md mb-4 w-full h-48 object-cover">
+          <h4 class="text-xl font-bold mb-2">热石理疗</h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关于我们 -->
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-6">关于我们</h3>
+      <p class="max-w-3xl mx-auto text-lg"></p>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section id="contact" class="py-16 bg-green-50">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold mb-6">联系我们</h3>
+      <p class="mb-6"></p>
+      <div class="space-y-2">
+        <p>📞 电话：123-456-7890</p>
+        <p>📍 地址：XXX 街道 XX 号，城市，州</p>
+        <p>🕒 营业时间：每天 10:00 - 22:00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <p>© 2025 按摩养生馆. 版权所有.</p>
+  </footer>
+
+</body>
+</html>
