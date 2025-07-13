@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>按摩店官网</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen text-gray-800 font-sans">
+
+  背景图片层
+  <div class="fixed inset-0 z-0 bg-[url('https://source.unsplash.com/1600x900/?spa,nature')] bg-cover bg-center"></div>
+
+  <!-- 半透明蒙层 -->
+  <div class="fixed inset-0 z-10 bg-white bg-opacity-70 backdrop-blur-sm"></div>
+
+  <!-- 页面内容 -->
+  <div class="relative z-20">
+    
+    <!-- 导航栏 -->
+    <header class="bg-white/80 shadow-md">
+     
+      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-green-700">Mei's Massage Center</h1>
+        <nav class="space-x-6">
+          <a href="#home" class="hover:text-green-500">Home</a>
+          <a href="#services" class="hover:text-green-500">Services</a>
+          <a href="#about" class="hover:text-green-500">About Us</a>
+          <a href="#contact" class="hover:text-green-500">Contact</a>
+        </nav>
+      </div>
+    </header>
+    
+    <section id="home" class=" bg-center h-[70vh]" style="background-image: url('/asset/env2.jpeg');">
+      <div class="h-full w-full bg-black bg-opacity-40 flex items-center justify-center">
+        <div class="text-center text-white space-y-4">
+          <h2 class="text-6xl font-extrabold bg-gradient-to-r from-yellow-300 via-pink-400 to-red-500 bg-clip-text text-transparent drop-shadow-md">
+            Welcome to Mei's Massage Therapy SPA
+          </h2>
+          
+          <p class="text-lg"></p>
+          <a href="#contact" class="inline-block bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full hover:bg-yellow-300 transition">BOOK NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 服务介绍 -->
+    <section id="services" class="py-16 bg-transparent">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="bg-white/80 rounded-2xl shadow-xl border border-green-200 p-8">
+          <h3 class="text-3xl font-semibold text-green-700 text-center mb-10">Our Services</h3>
+          <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white/80 p-6 rounded-xl shadow hover:shadow-lg transition">
+              <img src="/asset/back.jpeg" alt="服务1" class="rounded-md mb-4 w-full h-48 object-cover" />
+              <h4 class="text-xl font-bold mb-2 text-green-700">Full Body Massage</h4>
+              <p class="text-left text-base leading-relaxed text-gray-700">
+                Relax your body and mind with our full body massage. Melt away stress, ease muscle tension, and leave feeling refreshed and renewed. A truly worth-it experience for your well-being.
+              </p>
+            </div>
+            <div class="bg-white/80 p-6 rounded-xl shadow hover:shadow-lg transition">
+              <img src="/asset/feet.jpeg" alt="服务2" class="rounded-md mb-4 w-full h-48 object-cover" />
+              <h4 class="text-xl font-bold mb-2 text-green-700">Foot Massage</h4>
+              <p class="text-left text-base leading-relaxed text-gray-700">
+                Give your feet the care they deserve. Our expert foot massage improves circulation, reduces fatigue, and restores balance to your entire body. Perfect after a long day.
+              </p>
+            </div>
+            <div class="bg-white/80 p-6 rounded-xl shadow hover:shadow-lg transition">
+              <img src="/asset/hot_stone.jpeg" alt="服务3" class="rounded-md mb-4 w-full h-48 object-cover" />
+              <h4 class="text-xl font-bold mb-2 text-green-700"> Hot Stone Therapy</h4>
+              <p class="text-left text-base leading-relaxed text-gray-700">
+                Experience deep relaxation with our hot stone therapy. Smooth, heated stones gently melt away deep muscle tension, enhance circulation, and calm your nervous system.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 bg-transparent">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="bg-white/80 rounded-2xl shadow-xl border border-green-200 p-8">
+          <h3 class="text-3xl font-semibold mb-6 text-green-700 text-center">About Us</h3>
+          <p class="text-lg text-justify text-gray-800 leading-relaxed">
+            Our spa offers a touch of exotic charm and authentic bodywork in a peaceful, welcoming space.
+            Our therapists are not only highly skilled and professionally trained, but also warm, graceful, and attentive.
+            With their unique touch and friendly nature, every session is designed to relax your body and uplift your spirit.
+            We promise a personalized experience that leaves you feeling refreshed, cared for — and completely satisfied.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-transparent">
+      <div class="max-w-4xl mx-auto px-4">
+        <div class="bg-white/80 rounded-2xl shadow-xl border border-green-200 p-8">
+          <h3 class="text-3xl font-semibold mb-6 text-green-700 text-center">Contact Us</h3>
+          <p class="text-center text-lg mb-6 text-gray-800">We’re here to help you relax. Contact us today to book your session!</p>
+
+          <div class="space-y-4 text-base text-gray-700 text-left md:text-center">
+            <p><span class="text-green-700 font-semibold">📞 Contact Number:</span> 724-982-8585</p>
+            <p>
+              <span class="text-green-700 font-semibold">📍 Location:</span> 
+              <a href="https://www.google.com/maps/place/1622+North+Main+Street+Extension,+Butler,+PA+16001" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:underline">
+                1622 North Main Street Extension, Butler, PA 16001
+              </a>
+            </p>
+            
+            <p><span class="text-green-700 font-semibold">🕒 Business Hours:</span> Every day, 10:00 AM – 10:00 PM</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-white/80 text-gray-700 py-6 text-center">
+      <p>© 2025 按摩养生馆. 版权所有.</p>
+    </footer>
+  </div>
+</body>
+</html>
